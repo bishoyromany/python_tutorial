@@ -26,3 +26,26 @@ arr = arr+5
 print(arr1 , arr2 , id(arr2) , id(arr1))
 
 print(sin(arr) , cos(arr) , log(arr) , sum(arr) , max(arr))
+
+# matrix
+bigArray = array([
+    [1,2,3,4],
+    [5,6,7,8]
+])
+# 1 dim
+bigArray2 = bigArray.flatten()
+# multiple dim
+bigArray3 = bigArray.reshape(bigArray.shape)
+
+print(bigArray , bigArray.dtype , bigArray.ndim , bigArray.shape , bigArray.size)
+print(bigArray2)
+print(bigArray3)
+
+# matrix
+m = matrix(bigArray)
+m1 = matrix('1 2 3 4 ; 5 6 7 8')
+m2 = matrix('1 2 3 4 ; 5 6 7 8')
+print('')
+print(m)
+print(m2)
+print(diagonal(m2) , m.min() , m.max())
