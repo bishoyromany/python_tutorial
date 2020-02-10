@@ -70,7 +70,16 @@ def fib(n):
             nums[i] = nums[i - 1] + nums[i - 2]
     return nums
 
+
+def fact(n):
+    if(n == 0):
+        return 1
+    return n * fact(n - 1)
+
+square = lambda a,b : int(a + b) + int(a*b) * int(a + b) + int(a*b)
+
+
 r1,r2 = add_sub(10,20)
 print(greet() , returnThis('wroking') , multipleThis(10) , selfParams(10) , r1 , r2 ,person(name="name" , age="age") ,
       sumIt(10 , 20 , 20 , 40 , 50 , 60 , 100) , fullPerson('Bishoy' , city="Cairo" , phone="1234" , country="egy" , age=18) ,
-      bIsGloblaHere() , b , oddEven(lst) , fib(20))
+      bIsGloblaHere() , b , oddEven(lst) , fib(20) , fact(5) , square(5,5))
