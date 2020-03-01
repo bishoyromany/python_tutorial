@@ -42,14 +42,14 @@ def fetchAllUsers():
     result = cursor.fetchall()
     return result
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
-    try:
-        mydb
-        cursor
-    except NameError:
-        connectDatabase('python')
+try:
+    mydb
+    cursor
+except NameError:
+    connectDatabase('python')
 
-    print(vars())
+# print(vars())
 
 
